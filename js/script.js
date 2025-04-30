@@ -1,3 +1,7 @@
+/* Start Code */
+
+
+/* Generates Computer Choice and returns it */
 function getComputerChoice (){
     let x = Math.floor(Math.random() * 3);
    
@@ -10,4 +14,20 @@ function getComputerChoice (){
 };
 }
 
-console.log(getComputerChoice())
+/*console.log(getComputerChoice())*/
+
+/* Generates Human Choice and returns it */
+function getHumanChoice (){
+    let userInput = prompt("Please choose Rock, Paper or Scissors:")
+    return userInput;
+}
+
+/*console.log(getHumanChoice())
+
+
+/* States Player Scores */
+let humanScore = 0;
+let computerScore = 0;
+
+
+
