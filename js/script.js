@@ -57,7 +57,7 @@ function playRound(humanChoice, computerChoice) {
     { 
             roundCount++;
             computerScore++;
-        console.log(`You Lose! ${computerChoice} beats ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)}.`); 
+        console.log(`You Lose! ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)} beats ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)}.`); 
     }
     else if ((humanChoice === "paper" && computerChoice === "rock")
         || (humanChoice === "scissor" && computerChoice === "paper")
@@ -65,7 +65,7 @@ function playRound(humanChoice, computerChoice) {
     {   
         roundCount++;
         humanScore++;
-        console.log(`You Win! ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} beats ${computerChoice}.`); 
+        console.log(`You Win! ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} beats ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}.`); 
     }else
     { 
         console.log ("Invalid choice!\nPlease enter Rock, Paper, or Scissor")};
